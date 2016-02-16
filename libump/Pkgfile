@@ -1,0 +1,27 @@
+# Description: Unified Memory Provider, userspace library 
+# URL: https://github.com/linux-sunxi/libump 
+# Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: 
+
+name=libump
+version=git
+release=1
+source=()
+
+build() {
+  if [ ! -d $PKGMK_SOURCE_DIR/$name ]; then 
+    git clone https://github.com/linux-sunxi/libump.git $PKGMK_SOURCE_DIR/$name
+  else
+    cd $PKGMK_SOURCE_DIR/$name && git fetch
+  fi
+  cp -r $PKGMK_SOURCE_DIR/$name $SRC
+
+  mkdir -p $PKG/usr/lib
+
+  cd $SRC/$name
+  autoreconf -i
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
