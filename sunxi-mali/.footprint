@@ -1,0 +1,27 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/EGL/
+-rw-r--r--	root/root	usr/include/EGL/egl.h
+-rw-r--r--	root/root	usr/include/EGL/eglext.h
+-rw-r--r--	root/root	usr/include/EGL/eglplatform.h
+drwxr-xr-x	root/root	usr/include/GLES/
+-rw-r--r--	root/root	usr/include/GLES/gl.h
+-rw-r--r--	root/root	usr/include/GLES/glext.h
+-rw-r--r--	root/root	usr/include/GLES/glplatform.h
+drwxr-xr-x	root/root	usr/include/GLES2/
+-rw-r--r--	root/root	usr/include/GLES2/gl2.h
+-rw-r--r--	root/root	usr/include/GLES2/gl2ext.h
+-rw-r--r--	root/root	usr/include/GLES2/gl2platform.h
+drwxr-xr-x	root/root	usr/include/KHR/
+-rw-r--r--	root/root	usr/include/KHR/khrplatform.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libEGL.so -> libEGL.so.1
+lrwxrwxrwx	root/root	usr/lib/libEGL.so.1 -> libEGL.so.1.4
+lrwxrwxrwx	root/root	usr/lib/libEGL.so.1.4 -> libMali.so
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so -> libGLESv1_CM.so.1
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so.1 -> libGLESv1_CM.so.1.1
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so.1.1 -> libMali.so
+lrwxrwxrwx	root/root	usr/lib/libGLESv2.so -> libGLESv2.so.2
+lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2 -> libGLESv2.so.2.0
+lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2.0 -> libMali.so
+-rw-r--r--	root/root	usr/lib/libMali.so
